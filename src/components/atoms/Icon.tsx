@@ -1,11 +1,11 @@
 // Icon Component
 interface IconProps {
-  icon: any;
+  icon: React.ReactNode;
   label: string;
   className?: string;
 }
 
-const Icon = ({ icon, label, className = "" }) => {
+const Icon: React.FC<IconProps> = ({ icon, label, className = "" }) => {
   return (
     <div className={`flex items-center gap-2 ${className}`}>
       <span className="text-xl">{icon}</span>
