@@ -1,11 +1,4 @@
-import { FC, ButtonHTMLAttributes } from 'react';
-
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  children: React.ReactNode;
-  variant?: 'primary' | 'secondary';
-}
-
-const Button: FC<ButtonProps> = ({ children, variant = 'primary', ...props }) => {
+const Button = ({ children, variant = 'primary', ...props }) => {
   const baseClasses = 'w-full py-3 rounded-md text-white font-semibold';
   const variantClasses =
     variant === 'primary'

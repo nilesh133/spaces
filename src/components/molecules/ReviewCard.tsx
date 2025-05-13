@@ -1,5 +1,3 @@
-import Container from "../../layout/Container";
-
 interface ReviewCardProps {
   avatar: string;
   name: string;

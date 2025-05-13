@@ -1,3 +1,56 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Apply black & white theme using Tailwind classes */
+
+.rdrCalendarWrapper {
+  @apply text-black bg-white;
+}
+
+.rdrMonth {
+  @apply bg-white border-none;
+}
+
+.rdrDay {
+  @apply text-black;
+}
+
+.rdrDayToday .rdrDayNumber span {
+  @apply border border-black;
+}
+
+.rdrDayStartPreview {
+  @apply bg-black text-white;
+}
+
+.rdrDayNumber span {
+  @apply text-black;
+}
+
+.rdrStartEdge,
+.rdrEndEdge,
+.rdrInRange {
+  @apply bg-black text-white;
+}
+
+.rdrSelected,
+.rdrInRange {
+  @apply bg-black text-white;
+}
+
+.rdrDayDisabled {
+  @apply opacity-30;
+}
+
+.rdrDayPassive {
+  @apply text-gray-400;
+}
+
+.rdrMonthName {
+  @apply text-black font-bold;
+}
+
+.rdrWeekDay {
+  @apply text-black font-normal;
+}
