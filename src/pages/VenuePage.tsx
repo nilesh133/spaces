@@ -1,5 +1,4 @@
 import BookingCard from "../components/organisms/BookingCard";
-import DateRangePickerComponent from "../components/organisms/DateRangePicker";
 import LocationMap from "../components/organisms/LocationMap";
 import ReviewsSection from "../components/organisms/ReviewSection";
 import VenueImages from "../components/organisms/VenueImages";
@@ -12,7 +11,6 @@ export const VenuePage = () => (
     <Header/>
     <VenueImages />
     <BookingCard/>
-    {/* <DateRangePickerComponent/> */}
     <ReviewsSection/>
     <LocationMap/>
     <Footer/>
